@@ -319,7 +319,11 @@ class Os extends MY_Controller
 
     private function vincularEquipamentoNaOs($idOs, $data)
     {
+        log_message('error', 'DEBUG vincularEquipamentoNaOs called for idOs=' . $idOs . ' data=' . json_encode($data));
+
         if (empty($data['equipamento']) || empty($data['clientes_id'])) {
+            log_message('error', 'DEBUG vincularEquipamentoNaOs: early return (equipamento or clientes_id empty)');
+
             return;
         }
 
@@ -345,7 +349,10 @@ class Os extends MY_Controller
         } else {
             $equipamentoData['dataCadastro'] = date('Y-m-d');
             $equipamentosId = $this->equipamentos_model->add('equipamentos', $equipamentoData);
+            log_message('error', 'DEBUG vincularEquipamentoNaOs: insert result=' . var_export($equipamentosId, true) . ' db_error=' . json_encode($this->db->error()));
         }
+
+        log_message('error', 'DEBUG vincularEquipamentoNaOs: equipamentosId=' . var_export($equipamentosId, true));
 
         if ($equipamentosId) {
             $this->os_model->edit('os', ['equipamentos_id' => $equipamentosId], 'idOs', $idOs);
