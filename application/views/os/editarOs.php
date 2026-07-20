@@ -137,19 +137,19 @@
                                         </div>
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="descricaoProduto"><h4>Descrição Produto/Serviço</h4></label>
+                                        <label for="descricaoProduto">Descrição Produto/Serviço</label>
                                         <input class="span12" type="text" name="descricaoProduto" id="descricaoProduto" value="<?php echo $result->descricaoProduto ?>" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="defeito"><h4>Defeito</h4></label>
+                                        <label for="defeito">Defeito</label>
                                         <input class="span12" type="text" name="defeito" id="defeito" value="<?php echo $result->defeito ?>" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="observacoes"><h4>Observações</h4></label>
-                                        <input class="span12" type="text" name="observacoes" id="observacoes" value="<?php echo $result->observacoes ?>" />
+                                        <label for="observacoes">Observações</label>
+                                        <textarea class="span12 editor" name="observacoes" id="observacoes" cols="30" rows="5"><?php echo $result->observacoes ?></textarea>
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="laudoTecnico"><h4>Laudo Técnico</h4></label>
+                                        <label for="laudoTecnico">Laudo Técnico</label>
                                         <textarea class="span12 editor" name="laudoTecnico" id="laudoTecnico" cols="30" rows="5"><?php echo $result->laudoTecnico ?></textarea>
                                     </div>
                                     <div class="span12" style="padding: 0; margin-left: 0">
