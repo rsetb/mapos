@@ -138,6 +138,7 @@ class Os extends MY_Controller
                 $this->load->model('usuarios_model');
 
                 $idOs = $id;
+                $this->vincularEquipamentoNaOs($idOs, $data);
                 $os = $this->os_model->getById($idOs);
                 $emitente = $this->mapos_model->getEmitente();
 
@@ -257,6 +258,7 @@ class Os extends MY_Controller
                 $this->load->model('usuarios_model');
 
                 $idOs = $this->input->post('idOs');
+                $this->vincularEquipamentoNaOs($idOs, $data);
 
                 $os = $this->os_model->getById($idOs);
                 $emitente = $this->mapos_model->getEmitente();
@@ -313,6 +315,41 @@ class Os extends MY_Controller
         $this->data['view'] = 'os/editarOs';
 
         return $this->layout();
+    }
+
+    private function vincularEquipamentoNaOs($idOs, $data)
+    {
+        if (empty($data['equipamento']) || empty($data['clientes_id'])) {
+            return;
+        }
+
+        $this->load->model('equipamentos_model');
+
+        $equipamentoData = [
+            'clientes_id' => $data['clientes_id'],
+            'equipamento' => $data['equipamento'],
+            'marca' => $data['marca'],
+            'modelo' => $data['modelo'],
+            'serial' => $data['serial'],
+            'acessorios' => $data['acessorios'],
+            'checklist' => $data['checklist'],
+        ];
+
+        $equipamentoExistente = ! empty($data['serial'])
+            ? $this->equipamentos_model->findByClienteSerial($data['clientes_id'], $data['serial'])
+            : null;
+
+        if ($equipamentoExistente) {
+            $this->equipamentos_model->edit('equipamentos', $equipamentoData, 'idEquipamentos', $equipamentoExistente->idEquipamentos);
+            $equipamentosId = $equipamentoExistente->idEquipamentos;
+        } else {
+            $equipamentoData['dataCadastro'] = date('Y-m-d');
+            $equipamentosId = $this->equipamentos_model->add('equipamentos', $equipamentoData);
+        }
+
+        if ($equipamentosId) {
+            $this->os_model->edit('os', ['equipamentos_id' => $equipamentosId], 'idOs', $idOs);
+        }
     }
 
     public function visualizar()

@@ -3,6 +3,18 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 $config = [
+    'equipamentos' => [
+        [
+            'field' => 'clientes_id',
+            'label' => 'Cliente',
+            'rules' => 'required|trim|numeric',
+        ],
+        [
+            'field' => 'equipamento',
+            'label' => 'Equipamento',
+            'rules' => 'required|trim',
+        ],
+    ],
     'clientes' => [
         [
             'field' => 'nomeCliente',

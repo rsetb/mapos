@@ -56,6 +56,11 @@ class Permissoes extends MY_Controller
 
             $permissoes = [
 
+                'aEquipamento' => $this->input->post('aEquipamento'),
+                'eEquipamento' => $this->input->post('eEquipamento'),
+                'dEquipamento' => $this->input->post('dEquipamento'),
+                'vEquipamento' => $this->input->post('vEquipamento'),
+
                 'aCliente' => $this->input->post('aCliente'),
                 'eCliente' => $this->input->post('eCliente'),
                 'dCliente' => $this->input->post('dCliente'),
@@ -156,6 +161,11 @@ class Permissoes extends MY_Controller
             $nomePermissao = $this->input->post('nome');
             $situacao = $this->input->post('situacao');
             $permissoes = [
+
+                'aEquipamento' => $this->input->post('aEquipamento'),
+                'eEquipamento' => $this->input->post('eEquipamento'),
+                'dEquipamento' => $this->input->post('dEquipamento'),
+                'vEquipamento' => $this->input->post('vEquipamento'),
 
                 'aCliente' => $this->input->post('aCliente'),
                 'eCliente' => $this->input->post('eCliente'),
