@@ -9,3 +9,12 @@ foreach ($_SERVER as $k => $v) {
         echo "$k = " . var_export($v, true) . "\n";
     }
 }
+
+echo "\n--- conf-enabled ---\n";
+echo shell_exec('ls -la /etc/apache2/conf-enabled/ 2>&1');
+echo "\n--- our conf file content ---\n";
+echo shell_exec('cat /etc/apache2/conf-available/zz-proxy-https.conf 2>&1');
+echo "\n--- apache2ctl -M (rewrite?) ---\n";
+echo shell_exec('apache2ctl -M 2>&1 | grep -i rewrite');
+echo "\n--- apache2ctl configtest ---\n";
+echo shell_exec('apache2ctl configtest 2>&1');
