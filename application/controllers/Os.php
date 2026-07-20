@@ -124,6 +124,10 @@ class Os extends MY_Controller
                 'status' => set_value('status'),
                 'observacoes' => $this->input->post('observacoes'),
                 'laudoTecnico' => $this->input->post('laudoTecnico'),
+                'equipamento' => $this->input->post('equipamento'),
+                'marca' => $this->input->post('marca'),
+                'modelo' => $this->input->post('modelo'),
+                'serial' => $this->input->post('serial'),
                 'faturado' => 0,
             ];
 
@@ -225,6 +229,10 @@ class Os extends MY_Controller
                 'status' => $this->input->post('status'),
                 'observacoes' => $this->input->post('observacoes'),
                 'laudoTecnico' => $this->input->post('laudoTecnico'),
+                'equipamento' => $this->input->post('equipamento'),
+                'marca' => $this->input->post('marca'),
+                'modelo' => $this->input->post('modelo'),
+                'serial' => $this->input->post('serial'),
                 'usuarios_id' => $this->input->post('usuarios_id'),
                 'clientes_id' => $this->input->post('clientes_id'),
             ];

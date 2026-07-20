@@ -137,6 +137,22 @@
                                         </div>
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="equipamento">Equipamento</label>
+                                        <input class="span12" type="text" name="equipamento" id="equipamento" value="<?php echo $result->equipamento ?>" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="marca">Marca</label>
+                                        <input class="span12" type="text" name="marca" id="marca" value="<?php echo $result->marca ?>" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="modelo">Modelo</label>
+                                        <input class="span12" type="text" name="modelo" id="modelo" value="<?php echo $result->modelo ?>" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="serial">Serial</label>
+                                        <input class="span12" type="text" name="serial" id="serial" value="<?php echo $result->serial ?>" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="descricaoProduto">Descrição Produto/Serviço</label>
                                         <input class="span12" type="text" name="descricaoProduto" id="descricaoProduto" value="<?php echo $result->descricaoProduto ?>" />
                                     </div>
