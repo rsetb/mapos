@@ -138,11 +138,11 @@
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="descricaoProduto"><h4>Descrição Produto/Serviço</h4></label>
-                                        <textarea class="span12 editor" name="descricaoProduto" id="descricaoProduto" cols="30" rows="5"><?php echo $result->descricaoProduto ?></textarea>
+                                        <input class="span12" type="text" name="descricaoProduto" id="descricaoProduto" value="<?php echo $result->descricaoProduto ?>" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="defeito"><h4>Defeito</h4></label>
-                                        <textarea class="span12 editor" name="defeito" id="defeito" cols="30" rows="5"><?php echo $result->defeito ?></textarea>
+                                        <input class="span12" type="text" name="defeito" id="defeito" value="<?php echo $result->defeito ?>" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="observacoes"><h4>Observações</h4></label>
