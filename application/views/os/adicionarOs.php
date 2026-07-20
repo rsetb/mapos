@@ -61,7 +61,17 @@
                                         </div>
                                         <div class="span3">
                                             <label for="dataFinal">Data Final<span class="required">*</span></label>
-                                            <input id="dataFinal" autocomplete="off" class="span12 datepicker" type="text" name="dataFinal" value="" />
+                                            <?php
+                                                $dataFinalPadrao = new DateTime();
+                                                $diasUteisAdicionados = 0;
+                                                while ($diasUteisAdicionados < 5) {
+                                                    $dataFinalPadrao->modify('+1 day');
+                                                    if ((int) $dataFinalPadrao->format('N') < 6) {
+                                                        $diasUteisAdicionados++;
+                                                    }
+                                                }
+                                            ?>
+                                            <input id="dataFinal" autocomplete="off" class="span12 datepicker" type="text" name="dataFinal" value="<?php echo $dataFinalPadrao->format('d/m/Y'); ?>" />
                                         </div>
                                         <div class="span3">
                                             <label for="garantia">Garantia (dias)</label>
