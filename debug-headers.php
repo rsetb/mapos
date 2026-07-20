@@ -18,3 +18,5 @@ echo "\n--- apache2ctl -M (rewrite?) ---\n";
 echo shell_exec('apache2ctl -M 2>&1 | grep -i rewrite');
 echo "\n--- apache2ctl configtest ---\n";
 echo shell_exec('apache2ctl configtest 2>&1');
+echo "\n--- 000-default.conf ---\n";
+echo shell_exec('cat /etc/apache2/sites-available/000-default.conf 2>&1');
