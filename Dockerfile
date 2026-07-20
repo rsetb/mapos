@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libfreetype6-dev \
         libicu-dev \
         libcurl4-openssl-dev \
+        libxml2-dev \
+        libonig-dev \
         unzip \
         git \
         cron \
