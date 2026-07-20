@@ -89,6 +89,14 @@
                                         <input class="span12" type="text" name="serial" id="serial" value="" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="acessorios">Acessórios</label>
+                                        <input class="span12" type="text" name="acessorios" id="acessorios" value="" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="checklist">Checklist</label>
+                                        <input class="span12" type="text" name="checklist" id="checklist" value="" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="descricaoProduto">Descrição Produto/Serviço</label>
                                         <input class="span12" type="text" name="descricaoProduto" id="descricaoProduto" value="" />
                                     </div>

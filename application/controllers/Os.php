@@ -128,6 +128,8 @@ class Os extends MY_Controller
                 'marca' => $this->input->post('marca'),
                 'modelo' => $this->input->post('modelo'),
                 'serial' => $this->input->post('serial'),
+                'acessorios' => $this->input->post('acessorios'),
+                'checklist' => $this->input->post('checklist'),
                 'faturado' => 0,
             ];
 
@@ -233,6 +235,8 @@ class Os extends MY_Controller
                 'marca' => $this->input->post('marca'),
                 'modelo' => $this->input->post('modelo'),
                 'serial' => $this->input->post('serial'),
+                'acessorios' => $this->input->post('acessorios'),
+                'checklist' => $this->input->post('checklist'),
                 'usuarios_id' => $this->input->post('usuarios_id'),
                 'clientes_id' => $this->input->post('clientes_id'),
             ];

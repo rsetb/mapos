@@ -165,7 +165,9 @@ if (!empty($result->cidade) || !empty($result->estado) || !empty($result->cep)) 
                                             <?php if ($result->equipamento != null) { ?><b>EQUIPAMENTO: </b><?= printSafeHtml($result->equipamento) ?><br><?php } ?>
                                             <?php if ($result->marca != null) { ?><b>MARCA: </b><?= printSafeHtml($result->marca) ?><br><?php } ?>
                                             <?php if ($result->modelo != null) { ?><b>MODELO: </b><?= printSafeHtml($result->modelo) ?><br><?php } ?>
-                                            <?php if ($result->serial != null) { ?><b>SERIAL: </b><?= printSafeHtml($result->serial) ?><?php } ?>
+                                            <?php if ($result->serial != null) { ?><b>SERIAL: </b><?= printSafeHtml($result->serial) ?><br><?php } ?>
+                                            <?php if ($result->acessorios != null) { ?><b>ACESSÓRIOS: </b><?= printSafeHtml($result->acessorios) ?><br><?php } ?>
+                                            <?php if ($result->checklist != null) { ?><b>CHECKLIST: </b><?= printSafeHtml($result->checklist) ?><?php } ?>
                                         </td>
                                     </tr>
                                 <?php } ?>

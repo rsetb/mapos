@@ -153,6 +153,14 @@
                                         <input class="span12" type="text" name="serial" id="serial" value="<?php echo $result->serial ?>" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="acessorios">Acessórios</label>
+                                        <input class="span12" type="text" name="acessorios" id="acessorios" value="<?php echo $result->acessorios ?>" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
+                                        <label for="checklist">Checklist</label>
+                                        <input class="span12" type="text" name="checklist" id="checklist" value="<?php echo $result->checklist ?>" />
+                                    </div>
+                                    <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="descricaoProduto">Descrição Produto/Serviço</label>
                                         <input class="span12" type="text" name="descricaoProduto" id="descricaoProduto" value="<?php echo $result->descricaoProduto ?>" />
                                     </div>
