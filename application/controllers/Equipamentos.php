@@ -64,7 +64,7 @@ class Equipamentos extends MY_Controller
                 'equipamento' => $this->input->post('equipamento'),
                 'marca' => $this->input->post('marca'),
                 'modelo' => $this->input->post('modelo'),
-                'serial' => $this->input->post('serial'),
+                'num_serie' => $this->input->post('serial'),
                 'acessorios' => $this->input->post('acessorios'),
                 'checklist' => $this->input->post('checklist'),
                 'dataCadastro' => date('Y-m-d'),
@@ -107,7 +107,7 @@ class Equipamentos extends MY_Controller
                 'equipamento' => $this->input->post('equipamento'),
                 'marca' => $this->input->post('marca'),
                 'modelo' => $this->input->post('modelo'),
-                'serial' => $this->input->post('serial'),
+                'num_serie' => $this->input->post('serial'),
                 'acessorios' => $this->input->post('acessorios'),
                 'checklist' => $this->input->post('checklist'),
             ];

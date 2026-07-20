@@ -59,7 +59,7 @@
             echo '<td>' . $r->equipamento . '</td>';
             echo '<td>' . $r->marca . '</td>';
             echo '<td>' . $r->modelo . '</td>';
-            echo '<td>' . $r->serial . '</td>';
+            echo '<td>' . $r->num_serie . '</td>';
 
             echo '<td>';
             if ($this->permission->checkPermission($this->session->userdata('permissao'), 'eEquipamento')) {

@@ -36,7 +36,7 @@
             </div>
             <div class="span6" style="padding: 1%; margin-left: 0">
                 <label for="serial">Serial</label>
-                <input class="span12" type="text" name="serial" id="serial" value="<?php echo $result->serial ?>" />
+                <input class="span12" type="text" name="serial" id="serial" value="<?php echo $result->num_serie ?>" />
             </div>
             <div class="span6" style="padding: 1%; margin-left: 0">
                 <label for="acessorios">Acessórios</label>

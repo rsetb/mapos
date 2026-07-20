@@ -19,7 +19,7 @@ class Equipamentos_model extends CI_Model
             $this->db->like('equipamento', $where);
             $this->db->or_like('marca', $where);
             $this->db->or_like('modelo', $where);
-            $this->db->or_like('serial', $where);
+            $this->db->or_like('num_serie', $where);
             $this->db->or_like('clientes.nomeCliente', $where);
             $this->db->group_end();
         }
@@ -36,7 +36,7 @@ class Equipamentos_model extends CI_Model
             $this->db->like('equipamento', $where);
             $this->db->or_like('marca', $where);
             $this->db->or_like('modelo', $where);
-            $this->db->or_like('serial', $where);
+            $this->db->or_like('num_serie', $where);
             $this->db->or_like('clientes.nomeCliente', $where);
             $this->db->group_end();
         }
@@ -66,7 +66,7 @@ class Equipamentos_model extends CI_Model
     public function findByClienteSerial($clientesId, $serial)
     {
         $this->db->where('clientes_id', $clientesId);
-        $this->db->where('serial', $serial);
+        $this->db->where('num_serie', $serial);
         $this->db->limit(1);
 
         return $this->db->get('equipamentos')->row();

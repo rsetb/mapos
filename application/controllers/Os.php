@@ -334,7 +334,7 @@ class Os extends MY_Controller
             'equipamento' => $data['equipamento'],
             'marca' => $data['marca'],
             'modelo' => $data['modelo'],
-            'serial' => $data['serial'],
+            'num_serie' => $data['serial'],
             'acessorios' => $data['acessorios'],
             'checklist' => $data['checklist'],
         ];
