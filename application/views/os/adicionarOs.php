@@ -72,29 +72,34 @@
                                             <input id="garantias_id" class="span12" type="hidden" name="garantias_id" value="" />
                                         </div>
                                     </div>
-                                    <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="equipamento">Equipamento</label>
-                                        <input class="span12" type="text" name="equipamento" id="equipamento" value="" />
-                                    </div>
-                                    <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="marca">Marca</label>
-                                        <input class="span12" type="text" name="marca" id="marca" value="" />
-                                    </div>
-                                    <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="modelo">Modelo</label>
-                                        <input class="span12" type="text" name="modelo" id="modelo" value="" />
-                                    </div>
-                                    <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="serial">Serial</label>
-                                        <input class="span12" type="text" name="serial" id="serial" value="" />
-                                    </div>
-                                    <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="acessorios">Acessórios</label>
-                                        <input class="span12" type="text" name="acessorios" id="acessorios" value="" />
-                                    </div>
-                                    <div class="span6" style="padding: 1%; margin-left: 0">
-                                        <label for="checklist">Checklist</label>
-                                        <input class="span12" type="text" name="checklist" id="checklist" value="" />
+                                    <div class="span12" style="margin-left: 0; margin-bottom: 15px; padding: 10px 0; background-color: #f9f9f9; border: 1px solid #e3e3e3; border-radius: 4px;">
+                                        <div class="span12" style="margin-left: 0; padding: 0 1%;">
+                                            <h4 style="margin: 0 0 5px 0;">Dados do Equipamento</h4>
+                                        </div>
+                                        <div class="span6" style="padding: 1%; margin-left: 0">
+                                            <label for="equipamento">Equipamento</label>
+                                            <input class="span12" type="text" name="equipamento" id="equipamento" value="" />
+                                        </div>
+                                        <div class="span6" style="padding: 1%; margin-left: 0">
+                                            <label for="marca">Marca</label>
+                                            <input class="span12" type="text" name="marca" id="marca" value="" />
+                                        </div>
+                                        <div class="span6" style="padding: 1%; margin-left: 0">
+                                            <label for="modelo">Modelo</label>
+                                            <input class="span12" type="text" name="modelo" id="modelo" value="" />
+                                        </div>
+                                        <div class="span6" style="padding: 1%; margin-left: 0">
+                                            <label for="serial">Serial</label>
+                                            <input class="span12" type="text" name="serial" id="serial" value="" />
+                                        </div>
+                                        <div class="span6" style="padding: 1%; margin-left: 0">
+                                            <label for="acessorios">Acessórios</label>
+                                            <input class="span12" type="text" name="acessorios" id="acessorios" value="" />
+                                        </div>
+                                        <div class="span6" style="padding: 1%; margin-left: 0">
+                                            <label for="checklist">Checklist</label>
+                                            <input class="span12" type="text" name="checklist" id="checklist" value="" />
+                                        </div>
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="descricaoProduto">Descrição Produto/Serviço</label>
