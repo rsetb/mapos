@@ -1,0 +1,11 @@
+.git
+.github
+application/vendor
+application/logs/*
+application/.env
+uploads
+assets/userImage
+install/files
+docker/data
+docs
+*.md
