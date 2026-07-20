@@ -38,6 +38,8 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 COPY docker/easypanel/php.ini /usr/local/etc/php/conf.d/zz-mapos.ini
 COPY docker/easypanel/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY docker/easypanel/cron-jobs /etc/cron.d/mapos-cron
+COPY docker/easypanel/proxy-https.conf /etc/apache2/conf-available/zz-proxy-https.conf
+RUN a2enconf zz-proxy-https
 
 RUN chmod 0644 /etc/cron.d/mapos-cron \
     && touch /var/log/cron.log && chown www-data:www-data /var/log/cron.log \
