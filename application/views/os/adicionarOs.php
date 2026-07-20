@@ -88,13 +88,13 @@
                                         <label for="observacoes">
                                             <h4>Observações</h4>
                                         </label>
-                                        <textarea class="span12 editor" name="observacoes" id="observacoes" cols="30" rows="5"></textarea>
+                                        <input class="span12" type="text" name="observacoes" id="observacoes" value="" />
                                     </div>
                                     <div class="span6" style="padding: 1%; margin-left: 0">
                                         <label for="laudoTecnico">
                                             <h4>Laudo Técnico</h4>
                                         </label>
-                                        <textarea class="span12 editor" name="laudoTecnico" id="laudoTecnico" cols="30" rows="5"></textarea>
+                                        <input class="span12" type="text" name="laudoTecnico" id="laudoTecnico" value="" />
                                     </div>
                                     <div class="span12" style="padding: 1%; margin-left: 0">
                                         <div class="span12" style="display:flex; justify-content: center;">
